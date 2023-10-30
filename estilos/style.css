@@ -4,3 +4,49 @@
 azul: #313C99
 lilás: #801495
 */
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color:#313C99;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 325px;
+    height: 425px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+}
+
+div#imagem{
+    display: block;
+    background:#313C99 url(../imagens/pexels-fauxels-3184430.jpg) no-repeat top center;
+    background-size: cover;
+    height: 200px;
+   
+}
+
+div#formulario{
+    display: block;
+    padding: 10px;
+}
