@@ -7,7 +7,7 @@ tablete: 760 a 1024px
 desktop: 1025 a 1200px
 tv (grandes telas): 1201 +
 */
-
+ /*CONFIGURAÇÕES PARA TABLET*/
 @media screen and (min-width:760px) and (max-width: 1024px) {
     body,html{
         background-image: linear-gradient(to top,#313C99,#801495);
@@ -15,11 +15,12 @@ tv (grandes telas): 1201 +
 
     section#login{
         width: 80vw;
+        height: 250px;
     }
     
     div#imagem{
         float: left;
-        width: 30%;
+        width: 35%;
         height: 100%;
     }
 
@@ -27,16 +28,22 @@ tv (grandes telas): 1201 +
         float: right;       
         width: 65%;
         height: 100%;
+        transform: translateY(7%);
+    }
+    div#formulario > p{
+        margin: 10px 0px 15px 0px;
     }   
 }
 
+/*CONFIGURAÇÕES PARA TELAS GRANDES*/
 @media screen and (min-width:1025px){
     body,html{
         background-image: linear-gradient(#313C99,#801495);
     }
 
     section#login{
-        width: 85vw;
+        width:950px;
+        height: 350px;
     }
     
     div#imagem{
@@ -49,12 +56,14 @@ tv (grandes telas): 1201 +
         float: left;       
         width: 50%;
         height: 100%;
+        transform: translateY(15%);
     }   
     
     div#formulario > h1{
-        font-size: 2em;
+        font-size: 2.2em;
     }
     div#formulario > p{
         font-size: 1.2em;
+        margin: 20px 0px;
     }
 }
